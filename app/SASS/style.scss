@@ -1,0 +1,128 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+li {
+	list-style-type: none;
+}
+
+#app {
+	background-color: $primary-bg;
+	max-width: 1728px;
+	display: flex;
+	flex-direction: column;
+
+	.header {
+		@include flex(space-between, center);
+		padding: 50px 100px 30px;
+		height: 120px;
+
+		.logo-wrapper {
+			.logo {
+				height: 27px;
+			}
+
+		}
+
+		.nav {
+			.items__nav {
+				@include flex(space-between, center);
+
+				.item-nav {
+					font-family: gotham-book;
+					font-size: 20px;
+					color: #ffffff;
+					margin-right: 30px;
+				}
+			}
+		}
+
+		.switch-wrapper {
+			@include flex(space-between, center);
+
+			.switch {
+				position: relative;
+				display: inline-block;
+				width: 56px;
+				height: 32px;
+				margin-right: 20px;
+
+				.slider {
+					position: absolute;
+					cursor: pointer;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					border-radius: 32px;
+					background-color: #FFEC70;
+					background-image: url(../public/icons/moon.png);
+					background-repeat: no-repeat;
+					background-position: right;
+					-webkit-transition: .4s;
+					transition: .4s;
+				}
+
+				.slider:before {
+					position: absolute;
+					content: "";
+					height: 26px;
+					width: 26px;
+					left: 4px;
+					bottom: 3px;
+					border-radius: 50%;
+					background-color: white;
+					-webkit-transition: .4s;
+					transition: .4s;
+				}
+
+				input:checked+.slider {
+					background-color: $primary-bg;
+				}
+
+				input:focus+.slider {
+					box-shadow: 0 0 1px #2196F3;
+				}
+
+				input:checked+.slider:before {
+					-webkit-transform: translateX(26px);
+					-ms-transform: translateX(26px);
+					transform: translateX(26px);
+				}
+			}
+
+
+			.switch input {
+				display: none;
+			}
+
+
+
+
+
+			.btn-nav {
+				width: 133px;
+				height: 40px;
+				font-family: gotham-book;
+				font-size: 16px;
+				color: #ffffff;
+				background-color: #925FF0;
+				border-radius: 4px;
+			}
+		}
+
+	}
+
+
+}
