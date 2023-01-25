@@ -299,6 +299,68 @@ li {
 				}
 			}
 		}
+
+		.skills__main {
+			.title-skills {
+				font-family: anton;
+				font-size: 64px;
+				color: $primary-color;
+				text-transform: uppercase;
+				margin-top: 200px;
+			}
+
+			.skills {
+				@include grid(auto auto, auto auto, 20px, 20px);
+				margin-top: 50px;
+
+				.skill {
+					@include flex(space-between, center);
+					width: 756px;
+					height: 320px;
+					padding: 40px 50px 60px 40px;
+					border: 1px solid #737373;
+					border-radius: 10px;
+
+					.ellipse-skill {
+						width: 220px;
+						height: 220px;
+
+						.ellipse {}
+
+						.ellipse-text {
+							position: relative;
+							top: -135px;
+							left: 75px;
+
+							font-family: gotham-black;
+							font-size: $font-size-l;
+							color: $primary-color;
+							text-transform: uppercase;
+							margin-top: 200px;
+						}
+					}
+
+					.text-skill {
+						width: 426px;
+
+						.title-skill {
+							font-family: gotham-black;
+							font-size: $font-size-l;
+							color: $primary-color;
+
+						}
+
+						.description-skill {
+							font-family: gotham-book;
+							font-size: $font-size-m;
+							color: $primary-color;
+
+						}
+					}
+
+				}
+			}
+		}
 	}
 
 }
