@@ -13,6 +13,11 @@
 	src: url(../public/fonts/Anton-Regular.ttf);
 }
 
+@font-face {
+	font-family: gotham-bold;
+	src: url(../public/fonts/Gotham-Bold.otf);
+}
+
 
 //BG
 $primary-bg: #000000;
@@ -21,6 +26,8 @@ $primary-bg: #000000;
 $primary-color: #ffffff;
 
 //margin
+$margin-s: 23px;
 
 //padding
 $padding-xxl: 0 100px;
+$padding-s: 30px;

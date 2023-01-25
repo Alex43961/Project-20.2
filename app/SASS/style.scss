@@ -234,6 +234,71 @@ li {
 			}
 		}
 
+		.portfolio {
+			.title-portfolio {
+				font-family: anton;
+				font-size: 64px;
+				color: $primary-color;
+				text-transform: uppercase;
+				margin-top: 200px;
+			}
+
+			.displays__portfolio {
+				@include grid(auto auto auto auto, auto auto, 30px, 30px);
+				margin-top: 36px;
+
+				.display__portfolio {
+					display: inline-block;
+					padding: $padding-s;
+					border: 1px solid #737373;
+					border-radius: 10px;
+
+					.screen {
+						.screen-picture {
+							width: 300px;
+							height: 200px;
+							border-radius: 10px;
+						}
+					}
+
+					.title-display {
+						margin-top: $margin-s;
+						font-family: gotham-bold;
+						font-size: 28px;
+						font-weight: 700;
+						color: $primary-color;
+					}
+
+					.buttons-wrapper {
+						margin-top: 21px;
+						@include flex(start, center);
+
+						.btn-screen {
+							background-color: #E9DFFC;
+							width: 84px;
+							height: 24px;
+							border-radius: 12px;
+							border: 1px solid #BE9FF6;
+							padding: 4px 8px;
+							font-family: gotham;
+							font-size: 14px;
+							color: #784DC7;
+						}
+					}
+
+					.btn-display {
+						margin-top: $margin-s;
+						width: 300px;
+						height: 40px;
+						padding: 12px 24px;
+						background-color: #292929;
+						font-family: gotham-book;
+						font-size: 16px;
+						color: $primary-color;
+					}
+				}
+			}
+		}
 	}
 
 }
