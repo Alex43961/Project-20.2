@@ -119,9 +119,11 @@ li {
 	}
 
 	.main {
-		padding: 0 100px;
+
 
 		.home {
+			padding: 0 100px;
+
 			.banner-wrapper {
 				@include flex(space-between, center);
 				margin-top: 60px;
@@ -212,11 +214,11 @@ li {
 
 
 		.success {
+			margin: 153px 100px 0 100px;
 			@include flex(space-evenly, center);
 			padding: 82px 100px;
 			border: 1px solid #646464;
 			border-radius: 29px;
-			margin-top: 153px;
 
 			.job-text {
 				.number-text {
@@ -235,6 +237,8 @@ li {
 		}
 
 		.portfolio {
+			padding: 0 100px;
+
 			.title-portfolio {
 				font-family: anton;
 				font-size: 64px;
@@ -301,6 +305,8 @@ li {
 		}
 
 		.skills__main {
+			padding: 0 100px;
+
 			.title-skills {
 				font-family: anton;
 				font-size: 64px;
@@ -359,6 +365,91 @@ li {
 					}
 
 				}
+			}
+		}
+
+		.img-statement {
+			margin-top: $margin-xl;
+
+			.statement {
+				height: 800px;
+			}
+		}
+
+		.aboutMe {
+			padding: 0 100px;
+
+			.baby-section {
+				@include flex (space-between, center);
+				margin-top: 200px;
+
+				.babe-text {
+					.aboutMe-wrapper {
+
+
+						.title-aboutMe {
+							font-family: anton;
+							font-size: 64px;
+							color: $primary-color;
+							text-transform: uppercase;
+						}
+
+						.zigzag {
+							width: 267px;
+							height: 30px;
+							margin-left: 38px;
+						}
+					}
+
+					.text-1 {
+						font-family: gotham-black;
+						font-size: 36px;
+						font-weight: 500;
+						color: $primary-color;
+						width: 665px;
+						letter-spacing: -5%;
+						padding-top: 20px;
+
+						.yellow-text {
+							color: transparent;
+							-webkit-background-clip: text;
+							background-clip: text;
+							background-image: linear-gradient(#FA709A, #FEE140);
+						}
+					}
+				}
+
+				.smart-babe-img {
+					.babe {
+						width: 746px;
+						height: 530px;
+					}
+
+					.spiral {
+						position: absolute;
+						top: 5010px;
+						left: 1110px;
+					}
+				}
+			}
+
+			.childhood-section {
+				@include flex(space-between, center);
+
+				.child-img {
+					width: 782px;
+					height: 531px;
+				}
+
+				.text-2 {
+					font-family: gotham-black;
+					font-size: 36px;
+					font-weight: 500;
+					color: $primary-color;
+					width: 665px;
+					letter-spacing: -5%;
+				}
+
 			}
 		}
 	}
