@@ -32,7 +32,6 @@ li {
 			.logo {
 				height: 27px;
 			}
-
 		}
 
 		.nav {
@@ -184,9 +183,7 @@ li {
 								left: 0;
 								width: 20px;
 								height: 20px;
-
 							}
-
 						}
 					}
 				}
@@ -199,7 +196,6 @@ li {
 					.portal {
 						width: 160px;
 						height: 160px;
-
 					}
 				}
 
@@ -331,8 +327,6 @@ li {
 						width: 220px;
 						height: 220px;
 
-						.ellipse {}
-
 						.ellipse-text {
 							position: relative;
 							top: -135px;
@@ -360,7 +354,6 @@ li {
 							font-family: gotham-book;
 							font-size: $font-size-m;
 							color: $primary-color;
-
 						}
 					}
 
@@ -378,15 +371,13 @@ li {
 
 		.aboutMe {
 			padding: 0 100px;
+			margin-top: 200px;
 
 			.baby-section {
-				@include flex (space-between, center);
-				margin-top: 200px;
+				@include flex (space-between, start);
 
 				.babe-text {
 					.aboutMe-wrapper {
-
-
 						.title-aboutMe {
 							font-family: anton;
 							font-size: 64px;
@@ -408,7 +399,7 @@ li {
 						color: $primary-color;
 						width: 710px;
 						letter-spacing: -5%;
-						padding-top: 20px;
+						padding-top: 60px;
 
 						.yellow-text {
 							color: transparent;
@@ -502,12 +493,16 @@ li {
 	}
 
 	.footer {
+		margin-top: -100px;
 
 		.img-footer {
 			padding: 0 100px 0 77px;
+			position: relative;
+			top: 100px;
 		}
 
 		.footer-wrapper {
+
 
 
 			height: 283px;
@@ -516,6 +511,7 @@ li {
 			.nav__footer {
 				@include flex(space-between, center);
 				padding: 0 100px;
+				padding-top: 146px;
 
 				.logo-wrapper {
 					.logo {
@@ -527,6 +523,7 @@ li {
 
 				.items__nav {
 					@include flex(space-between, center);
+					margin-right: -40px;
 
 					.item-nav {
 						font-family: gotham-book;
@@ -534,21 +531,15 @@ li {
 						color: #ffffff;
 						margin-right: 30px;
 					}
-
 				}
 			}
 
 			.hr-footer {
-				color: #E6E6E6;
-				height: 2px;
-				margin-bottom: 47px;
-
+				border: none;
+				background-color: #E6E6E6;
+				height: 1px;
+				margin-top: 30px;
 			}
-
 		}
-
-
-
 	}
-
 }
