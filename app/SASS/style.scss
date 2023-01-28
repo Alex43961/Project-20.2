@@ -462,6 +462,7 @@ li {
 
 			.yangMan-section {
 				@include flex(space-between, center);
+
 				.text-3 {
 					font-family: gotham-black;
 					font-size: 36px;
@@ -474,25 +475,80 @@ li {
 					.lightblue {
 						color: #479fd7;
 					}
+
 					.more-lightblue {
 						color: #b986fb;
 					}
+
 					.yellow {
 						color: yellow;
 					}
+
 					.blue {
 						color: #65C8FF;
 					}
+
 					.red {
 						color: #FF0000;
 					}
 				}
+
 				.yangMan {
 					width: 745px;
 					height: 551px;
 				}
 			}
 		}
+	}
+
+	.footer {
+
+		.img-footer {
+			padding: 0 100px 0 77px;
+		}
+
+		.footer-wrapper {
+
+
+			height: 283px;
+			background-color: #292929;
+
+			.nav__footer {
+				@include flex(space-between, center);
+				padding: 0 100px;
+
+				.logo-wrapper {
+					.logo {
+						width: 164.25px;
+						height: 60.75px;
+					}
+				}
+
+
+				.items__nav {
+					@include flex(space-between, center);
+
+					.item-nav {
+						font-family: gotham-book;
+						font-size: 20px;
+						color: #ffffff;
+						margin-right: 30px;
+					}
+
+				}
+			}
+
+			.hr-footer {
+				color: #E6E6E6;
+				height: 2px;
+				margin-bottom: 47px;
+
+			}
+
+		}
+
+
+
 	}
 
 }
