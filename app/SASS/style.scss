@@ -406,7 +406,7 @@ li {
 						font-size: 36px;
 						font-weight: 500;
 						color: $primary-color;
-						width: 665px;
+						width: 710px;
 						letter-spacing: -5%;
 						padding-top: 20px;
 
@@ -448,8 +448,49 @@ li {
 					color: $primary-color;
 					width: 665px;
 					letter-spacing: -5%;
+
+					.blue-text {
+						color: #87b7c7;
+					}
+
+					.green-text {
+						color: #86f2be;
+					}
 				}
 
+			}
+
+			.yangMan-section {
+				@include flex(space-between, center);
+				.text-3 {
+					font-family: gotham-black;
+					font-size: 36px;
+					font-weight: 500;
+					color: $primary-color;
+					width: 710px;
+					letter-spacing: -5%;
+					padding-top: 20px;
+
+					.lightblue {
+						color: #479fd7;
+					}
+					.more-lightblue {
+						color: #b986fb;
+					}
+					.yellow {
+						color: yellow;
+					}
+					.blue {
+						color: #65C8FF;
+					}
+					.red {
+						color: #FF0000;
+					}
+				}
+				.yangMan {
+					width: 745px;
+					height: 551px;
+				}
 			}
 		}
 	}
