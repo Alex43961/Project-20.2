@@ -135,24 +135,23 @@ li {
 							font-weight: 400;
 							color: $primary-color;
 							text-transform: uppercase;
+							line-height: 180px;
+							letter-spacing: -6px;
 
-							p {
-								line-height: 180px;
-								letter-spacing: -6px;
-							}
 						}
-					}
 
-					.small-text {
-						font-family: anton;
-						font-size: 114px;
-						font-weight: 400;
-						color: transparent;
-						-webkit-background-clip: text;
-						background-clip: text;
-						background-image: linear-gradient(#FA709A, #FEE140);
-						line-height: 150px;
-						letter-spacing: -6px;
+
+						.small-text {
+							font-family: anton;
+							font-size: 114px;
+							font-weight: 400;
+							color: transparent;
+							-webkit-background-clip: text;
+							background-clip: text;
+							background-image: linear-gradient(#FA709A, #FEE140);
+							line-height: 150px;
+							letter-spacing: -4px;
+						}
 					}
 
 					.links-wrapper {
@@ -186,6 +185,7 @@ li {
 							}
 						}
 					}
+
 				}
 
 				.portal-wrapper {
@@ -502,9 +502,6 @@ li {
 		}
 
 		.footer-wrapper {
-
-
-
 			height: 283px;
 			background-color: #292929;
 
